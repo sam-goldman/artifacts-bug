@@ -1,9 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract HelloSphinx {
+import './ParentHelloSphinx.sol';
+
+contract HelloSphinx is ParentHelloSphinx {
     string public greeting;
-    uint public number;
+    uint public number = 334;
 
     constructor(string memory _greeting, uint _number) {
         greeting = _greeting;

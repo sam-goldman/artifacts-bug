@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "npx",
+      "type": "node",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "runtimeExecutable": "npx",
+      "args": [
+        "sphinx", "propose", "script/HelloSphinx.s.sol", "--networks", "testnets", "--confirm"
+      ],
+      "cwd": "${workspaceFolder}",
+    },
+  ],
+}
